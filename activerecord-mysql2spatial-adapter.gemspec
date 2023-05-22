@@ -21,6 +21,6 @@ Gem::Specification.new do |s|
   s.test_files = ["test/tc_spatial_queries.rb", "test/tc_basic.rb"]
 
   s.platform = ::Gem::Platform::RUBY
-  s.add_dependency('rgeo-activerecord', '~> 7.0.4')
+  s.add_dependency('rgeo-activerecord', '~> 7.0.1')
   s.add_dependency('mysql2', '~> 0.5')
 end
