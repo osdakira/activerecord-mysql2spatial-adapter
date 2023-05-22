@@ -3,12 +3,12 @@
 
 Gem::Specification.new do |s|
   s.name = "activerecord-mysql2spatial-adapter"
-  s.version = "0.6.1.nonrelease"
+  s.version = "0.7.1.nonrelease"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Daniel Azuma","Kazuo Matsunaga"]
-  s.date = "2019-10-31"
+  s.date = "2023-05-22"
   s.description = "This is an ActiveRecord connection adapter for MySQL Spatial Extensions. It is based on the stock MySQL2 adapter, but provides built-in support for spatial columns. It uses the RGeo library to represent spatial data in Ruby."
   s.email = "getlasterror@gmail.com"
   s.extra_rdoc_files = ["README.rdoc", "History.rdoc"]
@@ -21,6 +21,6 @@ Gem::Specification.new do |s|
   s.test_files = ["test/tc_spatial_queries.rb", "test/tc_basic.rb"]
 
   s.platform = ::Gem::Platform::RUBY
-  s.add_dependency('rgeo-activerecord', '~> 6.2')
+  s.add_dependency('rgeo-activerecord', '~> 7.0.4')
   s.add_dependency('mysql2', '~> 0.5')
 end
