@@ -119,8 +119,8 @@ module ActiveRecord
           end
         end
 
-        def new_column(*args) #:nodoc:
-          SpatialColumn.new(*args)
+        def new_column(*args, **kwargs) #:nodoc:
+          SpatialColumn.new(*args, **kwargs)
         end
 
 
