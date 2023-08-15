@@ -98,7 +98,7 @@ module ActiveRecord
             end
             execute "CREATE SPATIAL INDEX #{index_name_} ON #{table_name_} (#{Array(column_name_).join(", ")})"
           else
-            super
+            super(table_name_, column_name_, **options_)
           end
         end
 
